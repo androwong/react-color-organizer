@@ -1,0 +1,82 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add node-sass
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Administrator\AppData\Local\Programs\Python\Python37;C:\composer;C:\Program Files\gs\gs9.27\bin;C:\Program Files\nodejs\;C:\Windows\System32\WindowsPowerShell\v1.0;E:\xampp\php;C:\Program Files (x86)\Yarn\bin\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;C:\Users\Administrator\AppData\Local\Programs\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\Administrator\AppData\Local\Programs\EmEditor;C:\Users\Administrator\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/httpster: tunneling socket could not be established, cause=Hostname/IP does not match certificate's altnames: Host: registry.yarnpkg.com. is not in the cert's altnames: DNS:github.com, DNS:www.github.com
+      at ClientRequest.onError (C:\Program Files (x86)\Yarn\lib\cli.js:141076:17)
+      at Object.onceWrapper (events.js:273:13)
+      at ClientRequest.emit (events.js:182:13)
+      at TLSSocket.socketErrorListener (_http_client.js:392:9)
+      at TLSSocket.emit (events.js:182:13)
+      at emitErrorNT (internal/streams/destroy.js:82:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "color-organizer",
+    "version": "6.0.0",
+    "description": "A sample React application",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --progress",
+      "prestart": "npm run build",
+      "start": "httpster -d ./dist/ -p 3000",
+      "dev": "opener http://localhost:3000 & webpack-dev-server"
+    },
+    "keywords": [
+      "React",
+      "state",
+      "setState",
+      "explicitly",
+      "passing",
+      "props"
+    ],
+    "author": "Alex Banks <alex@moonhighway.com> (http://www.moonhighway.com)",
+    "license": "MIT",
+    "devDependencies": {
+      "opener": "1.4.3",
+      "babel-core": "6.26.0",
+      "babel-loader": "7.1.2",
+      "babel-preset-env": "1.6.0",
+      "babel-preset-react": "6.24.1",
+      "babel-preset-stage-0": "6.24.1",
+      "css-loader": "0.28.7",
+      "node-sass": "4.5.3",
+      "postcss-loader": "2.0.6",
+      "sass-loader": "6.0.6",
+      "style-loader": "0.18.2",
+      "webpack": "3.6.0",
+      "optimize-css-assets-webpack-plugin": "3.2.0",
+      "webpack-dev-server": "2.7.1"
+    },
+    "dependencies": {
+      "httpster": "1.0.3",
+      "prop-types": "15.6.0",
+      "react": "16.0.0",
+      "react-dom": "16.0.0",
+      "redux": "3.7.2",
+      "react-redux": "5.0.6",
+      "react-icons": "2.2.5",
+      "uuid": "3.1.0",
+      "react-router-dom": "4.2.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
